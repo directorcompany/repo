@@ -33,7 +33,7 @@ class Api
 
     public function getUser($id) {
 
-        $get = User::getInstace()->findOne($id);
+        $get = User::findOne($id);
         echo json_encode($get);
     }
 
